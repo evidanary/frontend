@@ -6,6 +6,21 @@
 
 .command-snippet {
   font-family:'Courier New';
+  white-space:pre;
+}
+
+.no-result {
+  font-family:'Arial';
+  color:gray;
+  font-style:italic;
+}
+
+.teaser {
+  font-size:11;
+}
+
+.teaser-info {
+  display: none;  
 }
 
 em
