@@ -9,6 +9,10 @@
   white-space:pre;
 }
 
+.feedback-text {
+  font-size:small;
+}
+
 .no-result {
   font-family:'Arial';
   color:gray;
