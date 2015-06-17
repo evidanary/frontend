@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 function getResults(token){
   var finalhtml="";
-  $.getJSON("http://127.0.0.1/select/?wt=json&indent=true&hl=true&hl.fl=description,command:string&hl.fl=description&hl.simple.pre=<strong>&hl.simple.post=</strong>&q=" + token, function(result){
+  $.getJSON("http://127.0.0.1/select/?wt=json&hl=true&hl.fl=description,command:string&hl.fl=description&hl.simple.pre=<strong>&hl.simple.post=</strong>&q=" + token, function(result){
   for (var i = 0; i < result.response.docs.length; i++) {
     var thisId = result.response.docs[i].id;
     var thisResult = ""
