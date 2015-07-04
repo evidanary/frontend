@@ -48,7 +48,7 @@ function initSuggestions(){
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     //prefetch: '../data/films/post_1960.json',
     remote: {
-      url: '/suggest?suggest=true&suggest.dictionary=descriptionSuggester&wt=json&suggest.count=48&suggest.q=%QUERY',
+      url: '/suggest?suggest=true&suggest.dictionary=descriptionSuggester&wt=json&suggest.count=6&suggest.q=%QUERY',
       filter: function(x) {
         var firstProp;
 	var outerJson = x.suggest.descriptionSuggester;
