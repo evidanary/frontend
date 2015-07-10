@@ -3,21 +3,11 @@ $(document).ready(function() {
   //  preLoadCheats();
   $('#remote').keypress(function(e){
     if(e.which == 13) {
+      //Remove typeahead menu when enter is pressed
+      $('.typeahead').typeahead('close');
       getResults($('<div/>').text($("#token").val()).html());
       //getResultsLunr($('<div/>').text($("#token").val()).html());
     }
-  });
-
-  //Suggestions
-//  $('#remote').bind('keyup', function(e){
-//    if($("#token").val().length > 0) {
-//      getSuggestions($("#token").val().html());
-//    }
-//  });
-//
-
-  $(".teaser").click(function () {
-    $(".teaser-info").fadeToggle();
   });
 
   initSuggestions();
@@ -43,7 +33,7 @@ function getResults(token){
 }
 
 function initSuggestions(){
-  var matchingDescriptionsRemote = new Bloodhound({
+  matchingDescriptionsRemote = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.obj.whitespace('command'),
     queryTokenizer: Bloodhound.tokenizers.whitespace,
     //prefetch: '../data/films/post_1960.json',
