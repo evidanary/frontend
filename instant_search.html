@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./favicon.ico" />
   </head>
   <body>
     <div class = "navbar navbar-inverse navbar-static-top">
@@ -33,12 +34,15 @@
     <div class = "container">
       <div class = "row">
 	<div class = "col-lg-9">
+	  <div class="alert alert-info">
+	    Use GrepPage to find hadoop and hive command snippets fast.
+	  </div>
 	  <div class = "panel panel-default">
 	    <div class = "panel-body">
 	      <div class = "page-body">
 		<div id="remote">
-		  <input type="text" class="form-control typeahead" placeholder="Search &#8629;" name="srch-term" id="token" autofocus>
-		  <span class="example-text"><small><i>&nbsp;&nbsp&nbsp;For example: hdfs append file</i></small>
+		  <input type="text" class="form-control typeahead" placeholder="Search &#8629;" name="srch-term" id="token" autofocus />
+		  <span class="example-text"><small><i>&nbsp;&nbsp&nbsp;For example: hdfs append file, hive add column</i></small>
 		</div>
 		<div class="spacer-medium"></div>
 		<div id="rs" class="spacer"></div>
